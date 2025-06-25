@@ -1,0 +1,1 @@
+i used html,css,js it contains ui,images on the outer and inner with a logo on top,if you add any any task you can see beautiful small images related to that work,you can undo the task,you can put a tick mark if you completed the task it will display like a list below whenever you add a task
