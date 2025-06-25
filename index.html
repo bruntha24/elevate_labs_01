@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Wine Smart To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, rgba(0, 0, 32, 0.9), rgba(48, 0, 48, 0.9)),
+                  url('https://th.bing.com/th/id/OIP.w2PklOwYoX2IFSS8TyF_TAHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3') no-repeat center center fixed;
+      background-size: cover;
+      color: #f9d5d3;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      margin: 0;
+      height: 100vh;
+    }
+    .background-frame {
+      position: relative;
+      padding: 20px;
+      background: url('https://th.bing.com/th/id/OIP.w2PklOwYoX2IFSS8TyF_TAHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3') no-repeat center center;
+      background-size: contain;
+      width: 500px;
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      padding: 20px;
+      width: 90%;
+      max-width: 420px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-frame">
+    <div class="overlay">
+      <div class="logo">
+        <img src="https://th.bing.com/th/id/OIP._mp1uX1VxW0wgwVof69EZgHaHa?w=143&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="App Logo">
+      </div>
+      <div class="todo-container">
+        <h1>🍷 IT'z To-Do List</h1>
+
+        <div class="input-group">
+          <input type="text" id="taskInput" placeholder="Enter a new task..." />
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <div id="taskInfo"></div>
+        <ul id="taskList"></ul>
+        <div id="undoArea"></div>
+      </div>
+
+      <div id="popup">Task Added!</div>
+      <button class="fab" onclick="addTask()">+</button>
+    </div>
+  </div>
+
+</body>
+</html>
